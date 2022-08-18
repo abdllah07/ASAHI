@@ -263,7 +263,7 @@ nav .nav-detail a:hover{
     color:var(--ogrenc-color);
 }
 nav .nav-pages{
-    width:70%;
+    width:75%;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
