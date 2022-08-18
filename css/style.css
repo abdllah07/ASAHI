@@ -572,6 +572,7 @@ header .slid-photo-text2 .slid-one-text2 button a{
     align-items: center;
     background-color: black;
     margin-bottom: 60px;
+    margin-top: 200px;
     flex-wrap: wrap;
 }
 .boxses .box-one,
@@ -671,7 +672,6 @@ bottom: -50px;
         display: none;
     }
     .more-our .more-img{
-        margin-left: 20px;
         width: 200%;
     }
     .more-our .more-text{
@@ -747,7 +747,7 @@ bottom: -50px;
     background-color: var(--ogrenc-color);
     width:100%;
     transition: 0.2s;
-    bottom: -1000%;
+    bottom: -1050%;
     text-align: center;
 }
 .Check-Our .all-prodct  .pro-1:hover .caption{
@@ -881,7 +881,7 @@ z-index: -1;
     .team .team-photo .box-1,
 .team .team-photo .box-2,
 .team .team-photo .box-3{
-    width: 90%;
+    width: 96%;
 }
 }
 .team .team-photo .box-1 .team-in,
@@ -948,7 +948,7 @@ z-index: -1;
 }
 @media(max-width:500px){
     .food-slider .cards .card-one{
-        width: 90%!important;
+        width: 96%!important;
     }
 }
 .food-slider .cards .card-one .var-img{
@@ -1117,6 +1117,7 @@ z-index: -1;
 .contact .con-info .email{
 margin-bottom: 60px;
 padding-right: 10px;
+padding-left: 10px;
 }
 .contact .con-info .phone i,
 .contact .con-info .email i{
