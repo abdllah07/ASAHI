@@ -10,7 +10,7 @@ a:hover{
     margin-bottom: 50px;
     display:flex;
     flex-wrap: wrap;
-   
+    justify-content: space-around;
 }
 .our-blog .side-bar{
     width: 30%;

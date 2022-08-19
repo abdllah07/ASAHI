@@ -1,0 +1,257 @@
+
+:root{
+    --ogrenc-color:#f26900;
+    --grey-color:#bab0b0;
+    --o-transition:all 0.7s;
+    color:var(--black-white-color);
+
+}
+
+.our-blog .right-side{
+    width: 60%;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.our-blog .right-side .image-text{
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.our-blog .right-side .image-text .image img{
+    width: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.our-blog .right-side .image-text .image p{
+    text-align: end;
+    margin-top: 20px;
+}
+.our-blog .right-side .image-text .img-info{
+    margin-top: 30px;
+    padding-right: 20px;
+}
+.our-blog .right-side .image-text .img-info h3{
+    margin-bottom: 20px;
+}
+.our-blog .right-side .image-text .img-info p,
+.our-blog .right-side .image-text .img-info h3{
+    text-align: end;
+}
+.our-blog .right-side .image-text .img-alt-title{
+    margin-top: 70px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.397);
+    border-right: 2px solid var(--ogrenc-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+.our-blog .right-side .image-text .img-alt-title p{
+    color:black;
+    padding-right: 20px;
+}
+.our-blog .right-side .image-text p{
+    text-align: end;
+    padding-right: 20px;
+}
+.our-blog .right-side .photo-box {
+    margin: 20px 10px 40px 10px ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.our-blog .right-side .photo-box .box-one{
+    width: 30%;
+
+}
+.our-blog .right-side .photo-box .box-one img{
+    width: 100%;
+}
+.our-blog .right-side .l-text{
+    margin: 10px 10px 40px 10px;
+    text-align: end;
+    padding-right: 20px;
+}
+.our-blog .right-side .social-share{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-left: 10px;
+}
+.our-blog .right-side .social-share .icons a{
+margin-right: 30px;
+background-color: rgba(255, 255, 255, 0.397);
+color:var(--ogrenc-color);
+padding: 5px;
+border-radius: 50%;
+font-size: 20px;
+}
+.our-blog .right-side .social-share .icons a:hover{
+    background-color: var(--ogrenc-color);
+    color:white;
+    transition: var(--o-transition);
+}
+.our-blog .right-side .social-share .share i{
+    margin-left: 10px;
+    font-size: 20px;
+}
+.our-blog .right-side .social-share .share a{
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-bottom:2px solid var(--ogrenc-color) ;
+}
+
+.our-blog .right-side .next-prev{
+    font-size: 16px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-left: 10px;
+    border-bottom:1px solid rgba(6, 6, 6, 0.244) ;
+    border-top: 1px solid rgba(6, 6, 6, 0.244);
+}
+
+.our-blog .right-side .comments{
+    margin: 40px 10px 40px 10px;
+    box-shadow: 0px 0px 29px 0px rgb(102 102 102 / 8%);
+}
+.our-blog .right-side .comments .com-h{
+    text-align: end;
+    font-weight: bold;
+    color:black;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.our-blog .right-side .comments .comments-box{
+    text-align: end;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+}
+.our-blog .right-side .comments .comments-box .comment-one{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-bottom: 40px;
+}
+.our-blog .right-side .comments .comments-box .comment-one .profile-photo {
+    max-width: 100%;
+}
+.our-blog .right-side .comments .comments-box .comment-one .profile-photo img {
+    width: 50px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+.our-blog .right-side .comments .comments-box .comment-one .comment-info{
+    width: 700px;
+    border-bottom: 1px solid rgba(6, 6, 6, 0.155) ;
+    padding-bottom: 50px;
+}
+.our-blog .right-side .comments .comments-box .comment-one .comment-info h3{
+    color:var(--ogrenc-color);
+    padding-bottom: 10px;
+}
+.our-blog .right-side .comments .comments-box .comment-one .comment-info p{
+    padding-bottom: 20px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+
+}
+.our-blog .right-side .comments .comments-box .comment-one .comment-info a{
+    border: 1px solid rgba(6, 6, 6, 0.244);
+    border-radius: 50%;
+    padding: 10px 10px 10px 10px ;
+    color:black;
+
+}
+.our-blog .right-side .comments .comments-box .comment-one .comment-info a:hover{
+    background-color:var(--ogrenc-color);
+    color:white;
+    
+}
+
+.our-blog .right-side .Leave-a-Replay{
+    margin: 40px 10px 40px 10px;
+    box-shadow: 0px 0px 29px 0px rgb(102 102 102 / 8%);
+    text-align: end;
+}
+.our-blog .right-side .Leave-a-Replay h3{
+    margin-top: 20px;
+    padding-top: 10px;
+    padding-bottom:10px;    
+    color:black;
+    font-weight: bold;
+    padding-right:20px;
+    border-right: 2px solid var(--ogrenc-color);
+}
+.our-blog .right-side .Leave-a-Replay p{
+    padding-top: 20px;
+    padding-bottom: 40px;
+
+}
+.our-blog .right-side .Leave-a-Replay .name-email{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 10px 30px 10px ;
+}
+.our-blog .right-side .Leave-a-Replay .name-email .name,
+.our-blog .right-side .Leave-a-Replay .name-email .email{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    width: 48%;
+}
+.our-blog .right-side .Leave-a-Replay .name-email .name input,
+.our-blog .right-side .Leave-a-Replay .name-email .email input{
+    width:90%;
+    border: 1px solid rgba(6, 6, 6, 0.244);
+    padding: 10px 0px 10px 0px;
+    font-size: 20px;
+    text-align: end;
+
+}
+.our-blog .right-side .Leave-a-Replay .name-email .name input:focus,
+.our-blog .right-side .Leave-a-Replay .name-email .email input:focus,
+.our-blog .right-side .Leave-a-Replay .web input:focus,
+.our-blog .right-side .Leave-a-Replay .comment textarea:focus{
+    outline: none;
+}
+.our-blog .right-side .Leave-a-Replay .web,
+.our-blog .right-side .Leave-a-Replay .comment{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin-bottom: 30px;
+    padding: 0px 15px  30px 10px;
+    
+}
+.our-blog .right-side .Leave-a-Replay .web input,
+.our-blog .right-side .Leave-a-Replay .comment textarea{
+    width:94%;
+    padding: 10px 0px 10px 0px;
+    border: 1px solid rgba(6, 6, 6, 0.244);
+    text-align: end;
+    font-size: 20px;
+}
+.our-blog .right-side .Leave-a-Replay .post{
+    padding-bottom: 40px;
+    padding-right: 20px;
+}
+.our-blog .right-side .Leave-a-Replay .post a{
+    background-color: var(--ogrenc-color);
+    color:white;
+    padding: 10px 15px 10px 15px;
+}
+@media(max-width:900px){
+    .our-blog .right-side {
+        width: 88%;
+        margin: 200px auto auto auto;
+    }
+}
