@@ -22,12 +22,12 @@
                 <div class="menu">
                     <div id="cd-nav" class="cd-nav">
                         <div class="cd-logo">
-                            <img src="images/asahi-logo.png" alt="">
+                            <img src="../images/asahi-logo.png" alt="">
                         </div>
                         <div class="Additional">
                             <h3>Additional Links</h3>
                             <ul>
-                                <a href=""><li>Login</li></a>
+                                <a href="pages/login.html"><li>Login</li></a>
                                 <a href=""><li>Sign Up</li></a>
                                 <a href=""><li>FAQ</li></a>
                                 <a href=""><li>Logout</li></a>
@@ -68,7 +68,7 @@
                
                   
                 <div class="con">
-                    <h4>CONTACT</h4>
+                    <a href="pages/contact.html"><h4>CONTACT</h4></a>
                 </div>
                 <div class="blog" id="blog">
                         <i class="fas fa-arrow-down"> BLOG</i>
@@ -100,7 +100,7 @@
                             <li><a href="">Book Table</a></li>
                             <li><a href="">Coming Soon</a></li>
                             <li><a href="">404 Error</a></li>
-                            <li><a href="">Log In</a></li>
+                            <li><a href="pages/login.html">Log In</a></li>
                             <li><a href="">Sign Up</a></li>
                         </ul>
                     </div>
@@ -165,7 +165,7 @@
                     <li><a href="">Book Table</a></li>
                     <li><a href="">Coming Soon</a></li>
                     <li><a href="">404 Error</a></li>
-                    <li><a href="">Log In</a></li>
+                    <li><a href="pages/login.html">Log In</a></li>
                     <li><a href="">Sign Up</a></li>
                 </ul>
             </div>
@@ -189,8 +189,8 @@
             </div>
         </div>
         <!-- start slider -->
-<!-- Slideshow container -->
-<div class="slideshow-container" id="slideshow-container">
+        <!-- Slideshow container -->
+        <div class="slideshow-container" id="slideshow-container">
     <!-- Full-width images with number and caption text -->
     <div class="mySlides fade1">
         <div class="slid-photo-text" >
@@ -234,11 +234,11 @@
         </div>
     </div>
     </div>
-</div>
-</div>
-    <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        </div>
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
     <br>
         <!-- end slider -->
@@ -483,7 +483,9 @@
             <div class="cards slider">
                 <div class="card-one">
                    <div class="var-img">
-                    <img src="images/1 (6).jpg" alt="" class="active">
+                    <div class="var-car-img">
+                        <img src="images/three.jpg" alt="" class="active">
+                    </div>
                     <div class="card-price">
                         <h2>40$</h2>
                     </div>
@@ -503,7 +505,9 @@
                 </div>
                 <div class="card-one">
                     <div class="var-img">
-                     <img src="images/2 (6).jpg" alt="">
+                     <div class="var-car-img">
+                         <img src="images/three.jpg" alt="" class="active">
+                     </div>
                      <div class="card-price">
                          <h2>40$</h2>
                      </div>
@@ -514,15 +518,18 @@
                     </div>
                     <div class="card-btn">
                      <button>ORDER NOW </button>
-                     <button id="increment1">+</button>
-                     <h2 id="number1">0</h2>
-                     <button id="decrement1">-</button>
+                     <button id="increment">+</button>
+                     <h2 id="number">0</h2>
+                     <button id="decrement">-</button>
+                 
                     </div>
                      
                  </div>
                  <div class="card-one">
                     <div class="var-img">
-                     <img src="images/3 (4).jpg" alt="">
+                     <div class="var-car-img">
+                        <img src="images/three.jpg" alt="" class="active">
+                     </div>
                      <div class="card-price">
                          <h2>40$</h2>
                      </div>
@@ -533,9 +540,10 @@
                     </div>
                     <div class="card-btn">
                      <button>ORDER NOW </button>
-                     <button id="increment2">+</button>
-                     <h2 id="number2">0</h2>
-                     <button id="decrement2">-</button>
+                     <button id="increment">+</button>
+                     <h2 id="number">0</h2>
+                     <button id="decrement">-</button>
+                 
                     </div>
                      
                  </div>
@@ -761,7 +769,7 @@
                 <a href="#">Home</a>
                 <a href="#">About Us</a>
                 <a href="#">Blog Grid</a>
-                <a href="#">Contact Us</a>
+                <a href="pages/contact.html">Contact Us</a>
                 <a href="#">Privacy Policy</a>
 
             </div>

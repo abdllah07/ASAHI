@@ -1,0 +1,166 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+
+}
+html{
+    overflow-x: hidden;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+:root{
+    --ogrenc-color:#f26900;
+    --grey-color:#bab0b0;
+    --o-transition:all 0.3s;
+}
+.all-page{
+    display: flex;
+    flex-wrap:wrap;
+}
+.all-page .page-login{
+    width: 47%;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.all-page .page-login h3{
+    text-align: center;
+    font-size: 30px;
+    background-color: #e1f2ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    width: 99%;
+}
+
+.all-page .page-login form .last-first .first-name label,
+.all-page .page-login form .last-first .last-name label{
+    text-align: end;
+    width: 98%;
+    color:#000000;
+    font-weight: bold;
+}
+.all-page .page-login form .last-first{
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+.all-page .page-login form .last-first .first-name,
+.all-page .page-login form .last-first .last-name{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    align-items: flex-end;
+}
+.all-page .page-login form .last-first  .first-name input,
+.all-page .page-login form .last-first  .last-name input{
+    text-align: end;
+    width: 98%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: none;
+    background-color: #f9f9f9;
+    color :#000000;
+    margin-bottom: 40px;
+    margin-top: 15px;
+}
+.all-page .page-login form .last-first .first-name input:focus,
+.all-page .page-login form .last-first .last-name input:focus{
+    outline: 2px solid #ededed;
+}
+.all-page .page-login form .email-pass{
+    display: flex;  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: end;
+    width: 98%;
+}
+.all-page .page-login form .email-pass input{
+    width: 100%;
+    margin-bottom: 40px;
+    border: 2px solid #f9f9f9;
+    text-align: end;
+    margin-top: 20px;
+    background-color: #f9f9f9;
+    color :#000000;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.all-page .page-login form .links{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.all-page .page-login form .links button{
+    background-color: var(--ogrenc-color);
+    border: none;
+    color:white;
+    padding:10px 60px 10px 60px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.all-page .page-login form .links a{
+color:black;
+font-weight: bold;
+}
+.all-page .page-login form .icons{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.all-page .page-login form .icons i{
+    color:var(--grey-color);
+    margin-left: 15px;
+    border: 2px dashed var(--grey-color);
+    border-radius: 50%;
+    padding: 7px;
+}
+.all-page .page-login form .icons i:hover{
+    color:var(--ogrenc-color);
+    transition: var(--o-transition);
+    border:2px dashed var(--ogrenc-color) ;
+}
+
+@media(max-width:700px){
+    .all-page .page-login form .last-first{
+        display: flex;
+        flex-direction: column;
+    }
+    .all-page .page-login form .last-first .first-name,
+    .all-page .page-login form .last-first .last-name{
+        width: 98%;
+    }
+
+}
+.all-page .page-img{
+    background-image: url('../login-img/log-in-bg.jpg');
+    width: 49%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    filter: blur(1px);
+}
+
+
+@media(max-width:777px){
+    .all-page .page-img{
+        width: 0%;
+    }
+    .all-page .page-login{
+        width: 100%;
+        height: 0;
+    }
+}
