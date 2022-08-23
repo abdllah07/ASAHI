@@ -1,0 +1,107 @@
+/* start -slider-food */
+.food-slider{
+    margin-bottom: 70px;
+}
+.food-slider .team-text{
+    text-align: center;
+    margin: -8px auto 100px;
+}
+.food-slider .team-text h1{
+    font-size: 30px;
+}
+.food-slider .team-text p{
+    width: 100%;
+}
+
+.food-slider .cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.food-slider .cards .card-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 30%;
+    height: 80vh;
+    box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+@media(max-width:900px){
+    .food-slider .cards .card-one{
+        width: 40%!important;
+        height: auto;
+    }
+}
+@media(max-width:500px){
+    .food-slider .cards .card-one{
+        width: 96%!important;
+    }
+}
+.food-slider .cards .card-one .var-img{
+    border: 1px dashed var(--ogrenc-color);
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+    
+}
+.food-slider .cards .card-one .var-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.food-slider .cards .card-one .var-img .var-car-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    }
+
+.food-slider .cards .card-one .var-img .card-price{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--ogrenc-color);
+    border-radius: 50%;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+.food-slider .cards .card-one .var-img .card-price h2{
+    color:white;
+}
+.food-slider .cards .card-one .card-info{
+    text-align: center;
+}
+
+.food-slider .cards .card-one .card-btn{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+}
+.food-slider .cards .card-one .card-btn #increment,
+.food-slider .cards .card-one .card-btn #decrement,
+.food-slider .cards .card-one .card-btn #increment1,
+.food-slider .cards .card-one .card-btn #decrement1,
+.food-slider .cards .card-one .card-btn #increment2,
+.food-slider .cards .card-one .card-btn #decrement2{
+    height: 30px;
+    background-color: white;
+    border: 1px solid rgb(190, 187, 187);
+}
+.food-slider .cards .card-one .card-btn button:first-child{
+    background-color: var(--ogrenc-color);
+    border: none;
+    padding: 10px;
+    color:white;
+
+}
+/* end slider -food */

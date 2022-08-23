@@ -1,0 +1,441 @@
+
+:root{
+    --ogrenc-color:#f26900;
+    --grey-color:#bab0b0;
+    --o-transition:all 0.3s;
+}
+body{
+
+}
+.food-detail{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: start;
+    margin-bottom: 60px;
+    overflow: hidden;
+    flex-direction: row-reverse;
+
+}
+.food-detail .food-img{
+    width: 40%;
+    margin-right: 30px;
+}
+.food-detail .food-img .costom-img{
+    max-width:100%;
+    height: 40vh;
+}
+.food-detail .food-img .costom-img{
+    width: 100%;
+    height: 100%;
+}
+.food-detail .food-info{
+    width:55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-end;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.food-detail .food-info .food-title{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.food-detail .food-info .food-title h3{
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+    font-family: "Lobster Two", cursive;
+}
+.food-detail .food-info .price{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: "Lobster Two", cursive;
+
+}
+.food-detail .food-info .price p:first-child{
+    padding-right: 5px;
+    text-decoration: line-through;
+    color:var(--grey-color);
+}
+.food-detail .food-info .reviews{
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-family: "Lobster Two", cursive;
+
+}
+.food-detail .food-info .reviews a{
+    text-decoration: underline;
+    color:rgb(128, 122, 122);
+}
+.food-detail .food-info .reviews i{
+    color:var(--ogrenc-color);
+    padding-left: 5px;
+}
+.food-detail .food-info .food-about{
+    text-align: end;
+    margin-bottom:25px;
+    color:var(--grey-color);
+    font-family: "Lobster Two", cursive;
+}
+.food-detail .food-info .add-to-cart{
+    font-family: "Lobster Two", cursive;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 15px;
+    margin-bottom: 20px;
+}
+.food-detail .food-info .add-to-cart a{
+    background-color: var(--ogrenc-color);
+    color:white;
+    padding: 20px 50px;
+}
+.food-detail .food-info .add-to-cart a i{
+    margin-left: 10px;
+    border-radius: 50%;
+    padding: 2px;
+}
+.food-detail .food-info .add-to-cart .counter{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    background-color:rgba(128, 122, 122, 0.326);
+    padding: 10px; 
+}
+.food-detail .food-info .add-to-cart .counter p{
+    font-size: 20px;
+    padding: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+.food-detail .food-info .add-to-cart .counter p:hover{
+    color:var(--ogrenc-color);
+}
+.food-detail .food-info .agree{
+    margin-bottom: 20px;
+    color:var(--grey-color);
+    margin-top: 10px;
+}
+.food-detail .food-info .agree input{
+    border: 1px solid var(--grey-color);
+    outline: none;
+    margin-left: 5px;
+}
+.food-detail .food-info .buy{
+    text-align: center;
+    width: 90%;
+    background-color: var(--ogrenc-color);
+    padding-top:20px;
+    padding-bottom: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    
+}
+.food-detail .food-info .buy a{
+    color:white;
+}
+.food-detail .food-info .visa{
+    text-align: end;
+}
+.food-detail .food-info .visa p{
+    color:var(--grey-color);
+}
+.food-detail .food-info .visa .icons{
+    width:100%;
+}
+.food-detail .food-info .visa .icons i{
+    margin-left:10px;
+    margin-top: 25px;
+    border: 1px solid var(--grey-color);
+    padding: 5px 10px 5px 10px;
+    color:black;
+}
+@media (max-width:830px){
+    .food-detail{
+        flex-direction: row;
+        margin-top: 200px;
+    }
+    .food-detail .food-img{
+        width: 90%;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .food-detail .food-img img{
+        width: 80%;
+    }
+    .food-detail .food-info .add-to-cart {
+        width:83%;
+    }
+    .food-slider .team-text p{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .food-detail .food-info{
+        width:100%;
+        justify-content: space-between;
+        align-items:center;
+        font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    .food-detail .food-info .food-about{
+        text-align:center;
+        margin-left:20px;
+        margin-right: 20px;
+    }
+}
+/* end food detail */
+
+.slide-show{
+    margin-top: 100px;
+    margin-bottom: 200px;
+    text-align: end;
+}
+.slide-show .buttons{
+    text-align: end;
+    margin-right:20px;
+
+}
+
+.slide-show .buttons button{
+    color:black;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    margin-right: 5px;
+    border:none;
+    cursor: pointer;
+    background-color: rgba(220, 215, 215, 0.244);
+}
+.slide-show .buttons button:last-child{
+    transition: all 0.5s;
+    background-color:orangered;
+    color:white;
+}
+.slide-show  .description{
+    margin: 40px 10px 20px 10px;
+    border: 1px solid #eeeeee;
+}
+.slide-show  .description p{
+    padding: 40px;
+}
+.slide-show .information{
+    margin-top: 40px;
+    border: 1px solid #eeeeee;
+    display: none;
+}
+.slide-show .information .brand ,
+.slide-show .information .color,
+.slide-show .information .size,
+.slide-show .information .Weight,
+.slide-show .information .Dimensions{
+    margin-right: 20px;
+    margin-bottom:25px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    border: 1px solid #eeeeee;
+    flex-direction: row-reverse;
+    padding: 20px 10px 20px 10px;
+    margin-left:20px;
+
+}
+.slide-show .information .brand p:last-child,
+.slide-show .information .color p:last-child,
+.slide-show .information .size p:last-child,
+.slide-show .information .Weight p:last-child {
+    margin-right: 200px;
+    color:var(--grey-color);
+
+}
+.slide-show .information .Dimensions p:last-child{
+    margin-right:170px;
+    color:var(--grey-color);
+
+}
+
+.slide-show  .reviews{
+    border: 1px solid #eeee;
+    margin-top: 40px;
+    display: none;
+}
+
+.slide-show  .reviews .r-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+.slide-show  .reviews .r-header h3{
+    margin-bottom:10px;
+}
+.slide-show  .reviews .r-header a{
+    margin-left: 10px;
+    background-color:var(--ogrenc-color);
+    padding: 10px;
+    color:white;
+    border-radius: 14px;
+}
+.slide-show  .reviews .r-header .star{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.slide-show  .reviews .r-header .star p{
+    padding-right: 10px;
+}
+.slide-show  .reviews .r-header .star i{
+    color: #ffba0a;
+}
+.slide-show  .reviews .rev-box{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 20px;
+    border: 1px solid #eeee;
+    padding: 10px;
+}
+.slide-show  .reviews .rev-box-info{
+    margin-right: 20px;
+}
+.slide-show  .reviews .rev-box i{
+    margin-bottom: 20px;
+    color: #ffba0a;
+}
+.slide-show  .reviews .rev-box h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.slide-show  .reviews .rev-box  p{
+    margin-bottom: 20px;
+    color:var(--grey-color);
+}
+@media(max-width:500px){
+    .slide-show .buttons a{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+
+    }
+    .slide-show .buttons{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+
+    }
+    .slide-show  .reviews .rev-box {
+        flex-direction: column;
+    }
+    .slide-show  .reviews .rev-box-info{
+        width: 100%;
+        text-align: center;
+    }
+    .slide-show  .reviews .rev-box-img{
+        width: 100%;
+        text-align: center;
+    }
+    .slide-show  .reviews .r-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .slide-show .reviews .r-header a{
+        margin-bottom: 20px;
+    }
+}
+
+/* end */
+
+/* start Write A review  */
+.w-review{
+    margin-bottom: 100px;
+    text-align: end;
+    border: 1px solid #eeee;
+}
+.w-review .first-last{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    flex-wrap: wrap;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.w-review .first-last .name,
+.w-review .first-last .email{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+    margin-top: 30px;
+    width:30%;
+}
+.w-review .first-last .name {
+    margin-right: 30px;
+}
+.w-review .first-last .name input,
+.w-review .first-last .email input{
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #eeee;
+    text-align: end;
+    margin-top: 20px;
+}
+
+@media(max-width:600px){
+    .w-review .first-last{
+        flex-direction: column;
+    }
+    .w-review .first-last .name ,
+    .w-review .first-last .email {
+        width: 100%;
+}
+.w-review .first-last .name{
+    margin-right: 0px;
+}
+}
+.w-review .first-last .name input:focus,
+.w-review .first-last .email input:focus,
+.w-review form .r-title input:focus,
+.w-review form .r-comment textarea:focus{
+    outline: none;
+}
+.w-review form .r-title,
+.w-review form .r-comment{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    flex-direction: column;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+.w-review form .r-title input ,
+.w-review form .r-comment textarea{
+    width: 90%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid #eeee;
+    margin-top: 20px;
+}
+
+.w-review form button{
+    margin-right: 40px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: var(--ogrenc-color);
+    color:white;
+    padding:20px 40px 20px 40px;
+    cursor: pointer;
+}
+/* end Write A review  */

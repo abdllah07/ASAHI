@@ -104,6 +104,23 @@ remove2.addEventListener('click',function(){
   counter2 -=1
   number2.innerHTML = counter2;
 });
+let add3 = document.getElementById('increment3');
+let remove3 = document.getElementById('decrement3');
+let number3 = document.getElementById('number3');
+
+let counter3 =0;
+
+add3.addEventListener('click',function(){
+  counter3 +=1
+  number3.innerHTML = counter3;
+});
+
+remove3.addEventListener('click',function(){
+  counter3 -=1
+  number2.innerHTML = counter2;
+});
+
+
 
 
 

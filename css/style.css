@@ -945,6 +945,7 @@ z-index: -1;
 @media(max-width:900px){
     .food-slider .cards .card-one{
         width: 40%!important;
+        height: auto;
     }
 }
 @media(max-width:500px){
@@ -995,7 +996,11 @@ z-index: -1;
     width:100%;
 }
 .food-slider .cards .card-one .card-btn #increment,
-.food-slider .cards .card-one .card-btn #decrement{
+.food-slider .cards .card-one .card-btn #decrement,
+.food-slider .cards .card-one .card-btn #increment1,
+.food-slider .cards .card-one .card-btn #decrement1,
+.food-slider .cards .card-one .card-btn #increment2,
+.food-slider .cards .card-one .card-btn #decrement2{
     height: 30px;
     background-color: white;
     border: 1px solid rgb(190, 187, 187);
@@ -1282,13 +1287,11 @@ padding-top: 20px;
 
 /* end about  */
 
-
-/* start Our Blog */
-
 .our-blog{
     margin-bottom: 150px;
 
 }
+/* start Our Blog */
 .our-blog .our-text{
     text-align: center;
 
