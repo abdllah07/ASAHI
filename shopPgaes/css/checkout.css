@@ -1,0 +1,259 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    overflow-x: hidden;
+
+}
+html{
+    overflow-x: hidden;
+
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+:root{
+    --ogrenc-color:#f26900;
+}
+
+/* start all section  */
+
+.all-section h5{
+    text-align: end;
+    margin-right: 20px;
+    padding-top: 20px;
+    border-top: 2px solid var(--ogrenc-color);
+
+}
+.all-section h5 a{
+    color:var(--ogrenc-color)
+}
+.all-section .all-box{
+    background-color: #66666616;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+/* start your-order */
+.all-section .all-box .your-order{
+    width: 45%;
+    padding-top: 20px;
+    text-align: end;
+    padding-bottom: 40px;
+    margin-right: 100px;
+}
+.all-section .all-box .your-order .order{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: end;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.all-section .all-box .your-order h3{
+    text-align: end;
+    margin-bottom: 20px;
+}
+.all-section .all-box .your-order .order .total{
+    width: 50%;
+    text-align: start;
+}
+.all-section .all-box .your-order .order .total p,
+.all-section .all-box .your-order .order .prodect-name p{
+    padding: 10px 20px 10px 20px;
+    border: 1px solid rgba(189, 184, 184, 0.933);
+    width: 100%;
+    color:#666666;
+}
+.all-section .all-box .your-order .order .total p:nth-child(6),
+.all-section .all-box .your-order .order .total p:nth-child(1),
+.all-section .all-box .your-order .order .total p:nth-child(7),
+.all-section .all-box .your-order .order .total p:nth-child(8),
+.all-section .all-box .your-order .order .prodect-name p:nth-child(6),
+.all-section .all-box .your-order .order .prodect-name p:nth-child(7),
+    .all-section .all-box .your-order .order .prodect-name p:nth-child(8),
+    .all-section .all-box .your-order .order .prodect-name p:nth-child(1){
+    color:black;
+    font-weight: bold;
+}
+
+.all-section .all-box .your-order .bank{
+    width: 100%;
+    text-align: end;
+
+}
+.all-section .all-box .your-order .bank input{
+    margin-bottom: 30px;
+    color:#f26900;
+}
+
+.all-section .all-box .your-order .bank label{
+    padding-right: 10px;
+    text-align: center;
+}
+
+.all-section .all-box .your-order .bank .paypal{
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+.all-section .all-box .your-order .bank p{
+    color:#666666;
+}
+.all-section .all-box .your-order a{
+    text-align: center;
+    background-color: var(--ogrenc-color);
+    color:white;
+    margin-bottom: 20px ;
+    padding: 10px;  
+    width: 100%;
+}
+
+/* end your-order */
+
+/* start Billing-Details */
+.all-section .all-box .Billing-Details h3{
+    text-align: end;
+    margin-bottom: 20px;
+
+}
+
+.all-section .all-box .Billing-Details {
+    padding-top: 20px;
+    text-align: end;
+    padding-bottom: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: end;
+
+}
+
+
+.all-section .all-box .Billing-Details form .c-select{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:#666666;
+}
+.all-section .all-box .Billing-Details form .c-select select{
+    margin-top: 5px;    
+    padding: 5px;
+    width: 100%;
+    text-align: end;
+}
+.all-section .all-box .Billing-Details form input,
+.all-section .all-box .Billing-Details form select{
+    border: 1px solid #eeee;
+}
+.all-section .all-box .Billing-Details form input:focus,
+.all-section .all-box .Billing-Details form select:focus{
+    outline: none;
+}
+
+.all-section .all-box .Billing-Details form .first-last,
+.all-section .all-box .Billing-Details form .state-zip,
+.all-section .all-box .Billing-Details form .email-phone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items:center;
+}
+.all-section .all-box .Billing-Details form .first-last .first,
+.all-section .all-box .Billing-Details form .first-last .last,
+.all-section .all-box .Billing-Details form .copmpany ,
+.all-section .all-box .Billing-Details form .Address,
+.all-section .all-box .Billing-Details form .Town,
+.all-section .all-box .Billing-Details form .state-zip .state,
+.all-section .all-box .Billing-Details form .state-zip .zip,
+.all-section .all-box .Billing-Details form .email-phone .email,
+.all-section .all-box .Billing-Details form .email-phone .phone{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:#666666;
+}
+.all-section .all-box .Billing-Details form .first-last .first input,
+.all-section .all-box .Billing-Details form .first-last .last input,
+.all-section .all-box .Billing-Details form .copmpany input ,
+.all-section .all-box .Billing-Details form .Address input ,
+.all-section .all-box .Billing-Details form .Town input,
+.all-section .all-box .Billing-Details form .state-zip .state input,
+.all-section .all-box .Billing-Details form .state-zip .zip input,
+.all-section .all-box .Billing-Details form .email-phone .email input,
+.all-section .all-box .Billing-Details form .email-phone .phone input{
+    margin-top: 5px;
+    padding: 5px;
+    text-align: end;
+}
+
+
+.all-section .all-box .Billing-Details form .check .account,
+.all-section .all-box .Billing-Details form .check .ship{
+    color:#666666;
+    margin-bottom: 15px;
+}
+.all-section .all-box .Billing-Details form .check .account input,
+.all-section .all-box .Billing-Details form .check .ship input{
+    margin-left: 10px;
+}
+.all-section .all-box .Billing-Details form .text-areay ,
+.all-section .all-box .Billing-Details form .text-areay textarea {
+    text-align: end;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color:#666666;
+}
+
+@media (max-width:1000px){
+    .all-section .all-box .your-order{
+        width: 100%;
+        margin-left: 5px;
+
+    }
+    .all-section .all-box .Billing-Details {
+        width: 100%;
+        align-items:stretch;
+        margin-left: 5px;
+    }
+    .all-section .all-box .Billing-Details form .first-last, 
+    .all-section .all-box .Billing-Details form .state-zip, 
+    .all-section .all-box .Billing-Details form .email-phone{
+        display: block;
+
+    }
+}
+@media (max-width:500px){
+    .all-section .all-box .your-order{
+        margin-right: 15px;
+    }
+    .all-section .all-box .your-order .order .total{
+        width: 40%;
+    }
+    .all-section .all-box .Billing-Details {
+        margin-right: 15px;
+    }
+}
+
+/* end Billing-Details */
+
+
+
+/* end all section */

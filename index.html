@@ -28,7 +28,7 @@
                             <h3>Additional Links</h3>
                             <ul>
                                 <a href="pages/login.html"><li>Login</li></a>
-                                <a href="pages/sign.html"><li>Sign Up</li></a>
+                                <a href=""><li>Sign Up</li></a>
                                 <a href=""><li>FAQ</li></a>
                                 <a href=""><li>Logout</li></a>
                             </ul>
@@ -86,7 +86,7 @@
                         <ul class="links">
                             <li><a href="shopPgaes/shop.html">Shop</a></li>
                             <li><a href="shopPgaes/shopDetail.html">Shop Details</a></li>
-                            <li><a href="">Checkout</a></li>
+                            <li><a href="shopPgaes/Checkout.html">Checkout</a></li>
                             <li><a href="">cart</a></li>
                         </ul>
                     </div>
@@ -101,7 +101,7 @@
                             <li><a href="">Coming Soon</a></li>
                             <li><a href="">404 Error</a></li>
                             <li><a href="pages/login.html">Log In</a></li>
-                            <li><a href="pages/sign.html">Sign Up</a></li>
+                            <li><a href="">Sign Up</a></li>
                         </ul>
                     </div>
                 </div>
@@ -166,14 +166,14 @@
                     <li><a href="">Coming Soon</a></li>
                     <li><a href="">404 Error</a></li>
                     <li><a href="pages/login.html">Log In</a></li>
-                    <li><a href="pages/sign.html">Sign Up</a></li>
+                    <li><a href="">Sign Up</a></li>
                 </ul>
             </div>
             <div class="shop" id="shop-ul">SHOP
                 <ul id="list-hidden-shop">
                     <li><a href="shopPgaes/shop.html">Shop</a></li>
                     <li><a href="shopPgaes/shopDetail.html">Shop Details</a></li>
-                    <li><a href="">Checkout</a></li>
+                    <li><a href="shopPgaes/Checkout.html">Checkout</a></li>
                     <li><a href="">cart</a></li>
                 </ul>
             </div>
@@ -246,18 +246,19 @@
     <!--  end nav  -->
 
     <!-- start boxses  -->
-        <section class="boxses">
-        <div class="box-one">
+        <section class="boxses"style="opacity: 0;" data-opacity="1" id="boxses">
+
+        <div class="box-one" style="right: 100%; position: relative;" data-right="0%" id="box-one">
             <i class="fa-solid fa-sack-dollar"></i>
             <h2>Low Costing Food</h2>
             <p> adipisicing elit. Et enim recusandae similique iste blanditiis ipsum est sit excepturi voluptatibus! </p>
         </div>
-        <div class="box-tow">
+        <div class="box-tow" style="opacity: 0;" data-opacity="1" id="box-tow">
             <i class="fa-solid fa-cloud"></i>
             <h2>Magical Atmosphere</h2>
             <p> adipisicing elit. Et enim recusandae similique iste blanditiis ipsum est sit excepturi voluptatibus! </p>
         </div>
-        <div class="box-three">
+        <div class="box-three" style="left: 100%; position: relative;" data-left="0%" id="box-three">
             <i class="fa-solid fa-bowl-food"></i>
             <h2>Best FoodQuality</h2>
             <p> adipisicing elit. Et enim recusandae similique iste blanditiis ipsum est sit excepturi voluptatibus! </p>
@@ -474,14 +475,14 @@
     <!-- end team -->
 
         <!-- start food-slider -->
-        <section class="food-slider">
+        <section class="food-slider" id="food-slider">
             <div class="team-text">
                 <h1>Check Our <span style="color:orange"> Delicious Menu</span></h1>
                 <img src="images/1 (1).png" alt="" >
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus, quia quae,<br> molestiae debitis soluta, vel repellendus quisquam ea dolor autem iste nisi amet. Autem aliquam quaerat mollitia doloremque quo.</p>
             </div>
-            <div class="cards">
-                <div class="card-one">
+            <div class="cards slider">
+                <div class="card-one" style="right: -100%; position: relative;" data-right="0%" id="card-one">
                    <div class="var-img">
                     <div class="var-car-img">
                         <img src="images/three.jpg" alt="" class="active">
@@ -503,7 +504,7 @@
                    </div>
                     
                 </div>
-                <div class="card-one">
+                <div class="card-one"style="opacity: 0;" data-opacity="1" id="card-tow">
                     <div class="var-img">
                     <div class="var-car-img">
                         <img src="images/three.jpg" alt="" class="active">
@@ -522,9 +523,8 @@
                     <h2 id="number1">0</h2>
                     <button id="decrement1">-</button>
                     </div>
-                    
                 </div>
-                <div class="card-one">
+                <div class="card-one" style="right: -100%; position: relative;" data-right="0%" id="card-three">
                     <div class="var-img">
                     <div class="var-car-img">
                         <img src="images/three.jpg" alt="" class="active">
@@ -543,13 +543,11 @@
                     <h2 id="number2">0</h2>
                     <button id="decrement2">-</button>
                     </div>
-                    
                 </div>
             </div>
         </section>
         <!-- end food-slider -->
 
-        
         <!-- start awesome Stats -->
         <section class="count" id="count">
             <div class="awesome-Stats">

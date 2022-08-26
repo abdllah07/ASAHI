@@ -574,6 +574,7 @@ header .slid-photo-text2 .slid-one-text2 button a{
     margin-bottom: 60px;
     margin-top: 200px;
     flex-wrap: wrap;
+    transition: 0.3s;
 }
 .boxses .box-one,
 .boxses .box-three,
@@ -940,12 +941,12 @@ z-index: -1;
     box-shadow: 0 0 20px 3px rgb(0 0 0 / 5%);
     padding-bottom: 40px;
     padding-top: 40px;
+    transition: all 1s;
 }
 
 @media(max-width:900px){
     .food-slider .cards .card-one{
         width: 40%!important;
-        height: auto;
     }
 }
 @media(max-width:500px){
@@ -1135,7 +1136,7 @@ z-index: -1;
 .contact .con-info p,
 .contact .con-info .phone,
 .contact .con-info .email{
-margin-bottom: 60px;
+margin-bottom: 40px;
 padding-right: 10px;
 padding-left: 10px;
 }
@@ -1287,11 +1288,13 @@ padding-top: 20px;
 
 /* end about  */
 
+
+/* start Our Blog */
+
 .our-blog{
     margin-bottom: 150px;
 
 }
-/* start Our Blog */
 .our-blog .our-text{
     text-align: center;
 

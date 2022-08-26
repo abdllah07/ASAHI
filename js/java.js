@@ -1,3 +1,5 @@
+// ööööö
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -23,7 +25,7 @@ function showSlides(n) {
   for (i = 0; i < dots.length; i++) {
     dots[i].className = dots[i].className.replace(" active", "");
   }
-  // slides[slideIndex-1].style.display = "block";
+  slides[slideIndex-1].style.display = "block";
   // dots[slideIndex-1].className += " active";
 }
 
@@ -34,6 +36,21 @@ let started = false;
 
 
 
+
+let card_1 = document.getElementById('card-one');
+let card_2 = document.getElementById('card-tow');
+let card_3 = document.getElementById('card-three');
+let section_in  = document.querySelector('.food-slider'); 
+
+
+
+let box1 = document.getElementById('box-one');
+let box2 = document.getElementById('box-tow');
+let box3 = document.getElementById('box-three');
+let boxses  = document.querySelector('.boxses'); 
+
+
+
 window.onscroll = function () {
   if (window.scrollY >= section.offsetTop -500) {
     if (!started) {
@@ -41,6 +58,25 @@ window.onscroll = function () {
     }
     started = true;
   }
+
+
+  if(window.scrollY >= section_in.offsetTop -100){
+    card_1.style.right = card_1.dataset.right;
+    card_2.style.opacity = card_2.dataset.opacity;
+    card_3.style.right = card_3.dataset.right;
+
+  }
+
+  if(window.scrollY >= boxses.offsetTop - 400){
+    boxses.style.opacity=boxses.dataset.opacity;
+
+      box1.style.right=box1.dataset.right;
+      box2.style.opacity=box2.dataset.opacity;
+      box3.style.left=box3.dataset.left;
+
+  }
+
+
 };
 
 function startCount(el) {
@@ -65,19 +101,12 @@ let section_slide = document.getElementById('slideshow-container');
 
 if (window.scrollY >= section_slide.offsetTop - 50) {
 
-  console.log('hi');
-
     slid1.style.opacity = slid1.dataset.opacity;
     slid2.style.opacity = slid2.dataset.opacity;
     slid3.style.opacity = slid3.dataset.opacity;
-
-  // imgs.forEach((img) => {
-  //   img.style.opacity = img.dataset.opacity;
-  // });
-  // divs.forEach((div) => {
-  //   div.style.opacity = div.dataset.opacity;
-  // });
 }
+
+
 
 
 jQuery(document).ready(function($){
@@ -98,5 +127,9 @@ jQuery(document).ready(function($){
     }
   });
 });
+
+
+// incremt right 
+
 
 
